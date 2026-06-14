@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    padding: 150px;
+    padding-top: 100px;
+}
+.hero-content {
+    flex: 1;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero-subtitle {
+    font-size: 15px;
+    background-color: rgb(134 242 228);
+    width: fit-content;
+    color: rgb(86, 88, 88);
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+.hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+.highlight {
+    color: rgb(0 106 97);
+}
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    width: 80%;
+    color: #45464d;
+    font-family: 'Arial', sans-serif;
+}
+.content-buttons {
+    display: flex;
+    gap: 20px;
+}
+.btn-book-appointment{
+    background-color: #060606;
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+.btn-learn{
+    background-color: transparent;
+    color: #060606;
+    padding: 20px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 1px solid #060606;
+}
+.btn-learn:hover{
+    background-color: #d7d5d5;
+  
+}
+#spacer img{
+    width: 500px;
+    height: 550px;
+    border-radius: 20px;
+    position: relative;
+    transform: translateZ(30px);
+}
