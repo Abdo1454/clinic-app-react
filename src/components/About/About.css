@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .about{
     display: flex;
     justify-content: center;
@@ -110,43 +115,50 @@
     flex-wrap: wrap;
 
 }
+.care-1{
+margin-top: 50px;
+}
 .care-1, .care-2{
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
 
-}
-.care-1 p, .care-2 p{
+}.care-1 p,
+.care-2 p {
     font-size: 18px;
-    font-family: 'Arial', sans-serif;
-    color: #faf7f7;
-    width: 300px;
-    height: 100px;
+    font-family: Arial, sans-serif;
+    width: 250px;
+    min-height: 150px;
     text-align: center;
-}
-.care-1 p{
-    background: #006a61;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px 20px;
     border-radius: 10px;
 }
-.care-2 p{
-    background: #f4f6f6;
-    padding: 10px 20px;
-    color: #000;
-    border-radius: 10px;
+
+.care-1 p {
+    background-color: #006a61;
+    color: white;
 }
-.care-2 p span{
+
+.care-2 p {
+    background-color: #f4f6f6;
+    color: black;
+}
+
+.care-1 p span,
+.care-2 p span {
     font-size: 30px;
     font-weight: bold;
 }
-.care-1 p span{
-    font-size: 30px;
-    font-weight: bold;
-}
-.care-1 img, .care-2 img{
-    width: 300px;
-    height: 350px;
+
+.care-1 img,
+.care-2 img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
