@@ -100,7 +100,7 @@ Notes: ${notes}
                   onChange={(e) => setNotes(e.target.value)}
                 placeholder="How can we help you today?"></textarea>
                       </div>
-                <button id='btnSubmit' className="send" type="submit">Confirm Appointment Request</button>
+                <button onClick={handleForm} className="send" type="submit">Confirm Appointment Request</button>
             </form>
             </div>
         </section>

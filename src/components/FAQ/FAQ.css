@@ -1,0 +1,81 @@
+.location{
+    margin-left: 100px;
+    margin-top:80px ;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.map iframe{
+    border-radius: 15px;
+    width: 500px;
+}
+.info-address{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+}
+.address-title p {
+    color: rgb(114, 119, 119);
+    font-size: 20px;
+    width: 85%;
+}
+.address-list{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.address-list i {
+     color: #006a61;
+     font-size: 20px;
+}
+.address-content{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font-family: 'Arial', sans-serif;
+}
+.Equsetion-faq{
+    margin-top:100px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.answer-equ{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+    font-size: 24px;
+    font-family:'Arial', sans-serif ;
+}
+.list-equ{
+ width: 700px;
+    max-width: 100%;
+     display: flex;
+     flex-direction: column;
+    border:1px solid black ;
+    padding: 25px 10px;
+    border-radius: 15px;
+}
+.question{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+        width: 700px;
+    max-width: 100%;
+    /* height: 60px; */
+    /* justify-content: space-around; */
+}
+.answer-equ li i{
+    text-align: right;
+     cursor: pointer;
+   
+}
+.answer{
+    font-size: 18px;
+    color: #aba8a8;
+}
+.hidden{
+    display: none;
+}
