@@ -8,7 +8,7 @@ function Navbar() {
             <ul className="nav-links">
                 <li><a href="#">Services</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Testimonials</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li className="btn-book"><a href="#">Book Now</a></li>
             </ul>
