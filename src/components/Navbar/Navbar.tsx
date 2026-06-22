@@ -5,6 +5,13 @@ function Navbar() {
     <div>
         <nav className="navbar">
             <h2 className="logo">MediCore</h2>
+         <div className="menu-icon">
+  <span className="dash"></span>
+  {/* <br></br> */}
+  <span className="dash"></span>
+  {/* <br></br> */}
+  <span className="dash"></span>
+</div>
             <ul className="nav-links">
                 <li><a href="#">Services</a></li>
                 <li><a href="#">About</a></li>
