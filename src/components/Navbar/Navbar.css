@@ -40,16 +40,50 @@ h2{
 }
 /* 
 *********************************** */
-.menu-icon{
-    
+
+.menu-icon {
+    display: none;
+  cursor: pointer;
 }
+
 .menu-icon span {
   display: block;
   height: 3px;
   margin: 4px;
   width: 40px;
-  cursor: pointer;
-
   background: #141414;
   border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* شكل الـ X لما يفتح */
+.menu-icon.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+.hidden{
+    display: none;
+}
+/* الموبايل */
+@media (max-width: 391px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+.menu-icon {
+    display: block; /* تظهر هنا فقط على شاشات الموبايل! */
+  }
+  /* لما تتفتح */
+  .nav-links.active {
+    display: flex;
+  }
 }
