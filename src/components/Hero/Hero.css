@@ -74,3 +74,31 @@
     position: relative;
     transform: translateZ(30px);
 }
+
+/* 
+******************************************** */
+@media (max-width:770px) {
+    .hero{
+        margin-left: 300px;
+    }
+}
+@media (max-width:391px) {
+    .hero{
+        flex-direction: column;
+        /* justify-self: center;
+        align-items: center; */
+    }
+    .hero-content{
+        width: 500px;
+        padding-right: 0px;
+        margin: 70px;
+        margin-left:500px ;
+    }
+    #spacer img{
+        width: 650px;
+        display: block;
+        margin-left: 450px;
+
+    } 
+   
+}
