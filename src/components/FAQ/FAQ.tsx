@@ -43,6 +43,7 @@ function FAQ() {
             </div>
         </section>
 
+
         <section className='Equsetion-faq' >
             <h2>Frequently Asked Questions</h2>
 
