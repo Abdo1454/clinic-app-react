@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './Services.css';
 import generalIcon from "../../assets/img/health-home.png";
 import Cardiology from "../../assets/img/cardiology_icon.png";

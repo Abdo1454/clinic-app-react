@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Hero.css"
 import heroImage from "../../assets/img/hero-section.png";
 function Hero() {

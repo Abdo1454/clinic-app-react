@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react';
 import './Contact.css'
 function Contact() {
@@ -7,7 +6,7 @@ function Contact() {
    const [date, setDate] = useState("");
    const [service, setService] = useState("");
 const [notes, setNotes] = useState("");
-  function handleForm(event){
+  function handleForm(event: React.FormEvent<HTMLFormElement>){
     event.preventDefault();
       const formData = {
     name,
@@ -100,7 +99,7 @@ Notes: ${notes}
                   onChange={(e) => setNotes(e.target.value)}
                 placeholder="How can we help you today?"></textarea>
                       </div>
-                <button onClick={handleForm} className="send" type="submit">Confirm Appointment Request</button>
+                <button className="send" type="submit">Confirm Appointment Request</button>
             </form>
             </div>
         </section>
