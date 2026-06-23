@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
+  base: '/clinic-app-react/', // 👈 ضف هذا السطر هنا بالضبط باسم مستودعك
 })
