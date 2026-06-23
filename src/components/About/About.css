@@ -162,3 +162,125 @@ margin-top: 50px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* ====================================================== 
+   📱 شاشات الموبايل (أقل من 391px) 
+====================================================== */
+@media (max-width: 391px) {
+    
+    /* 1. القسم الرئيسي (صورة المشفى + الكلام) */
+  .about {
+        padding-top: 100px; /* زيادة الـ padding العلوي لترك مساحة مريحة */
+        padding-bottom: 40px;
+        flex-direction: column;
+        width: 600px;
+        margin-left: 50px;
+    }
+
+    /* 2. تظبيط شارة الخبرة السوداء لتبتعد عن حافة الصورة */
+    .img-about .experience {
+        margin: 25px auto 10px auto; /* ترك مسافة 25px بينها وبين الصورة أعلاها */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* إعطائها ظل خفيف لتبدو بارزة */
+    }
+
+    /* 2. حاوية الصورة والصورة نفسها */
+    .img-about {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .img-about img {
+        width: 400px;       /* الصورة تأخذ عرض الشاشة المتاح */
+        max-width: 350px;  /* حماية أقصى عرض */
+        height: auto;      /* الحفاظ على التناسب بدون مط */
+    }
+
+    /* 3. شارة الخبرة (تعديل الـ transform الكارثي) */
+    .img-about .experience {
+        transform: none;    /* إلغاء النقل العشوائي بالـ px */
+        margin: 15px auto 0 auto; /* تموضع طبيعي ومرن أسفل الصورة */
+        text-align: center;
+        padding: 15px 25px;
+    }
+
+    /* 4. محتوى النصوص الجانبية */
+    .about-content {
+        margin-left: 0;     /* ❌ إلغاء الهامش الأيسر تماماً */
+        width: 100%;
+        gap: 20px;
+        text-align: center; /* توسيط النصوص لتناسب الموبايل */
+        align-items: center;
+    }
+
+    .about-content h2 {
+        font-size: 28px;    /* تصغير حجم الخط قليلاً */
+    }
+
+    .desc {
+        height: auto;       /* جعل الارتفاع مرن لتفادي قطع النص */
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 5. قسم الإحصائيات (الحاوية الداكنة) */
+    .info-about {
+        flex-direction: column;
+        padding: 40px 15px;
+        gap: 40px;
+        width: 750px;
+    }
+
+    .info-our {
+        gap: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .list-info {
+        flex-direction: column; /* جعل الأيقونة والنص عمودياً */
+        align-items: center;
+        gap: 15px;
+    }
+
+    .list-info i {
+        margin-right: 0;
+        padding: 15px 25px; /* موازنة الـ padding الافتراضي */
+    }
+
+    /* 6. شبكة كروت الرعاية والصور (الـ Grid السفلي) */
+    .show-info-about {
+        /* flex-direction: column; */
+
+        /* align-items: center;
+        justify-content: center; */
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .care-1 {
+        margin-top: 0; /* إلغاء الدفع العلوي لتتساوى الكروت في الترتيب العمودي */
+    }
+
+    .care-1, .care-2 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .care-1 p, .care-2 p {
+        width: 100%;
+        max-width: 280px;
+        min-height: auto; /* ترك الارتفاع مرن لراحة العين */
+        padding: 20px;
+    }
+
+    .care-1 img, .care-2 img {
+        width: 100%;
+        max-width: 280px;
+        height: 250px;
+    }
+}
