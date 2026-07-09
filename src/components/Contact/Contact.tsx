@@ -54,6 +54,8 @@ Notes: ${notes}
                 <h2>Schedule Your Visit</h2>
                 <p>Fill out the form below and our coordinator will reach out within 15 minutes.</p>
             <form className="contact-form" onSubmit={handleForm}>
+
+              <div className="small-form">
                <div className="desc-input">
                 <label>Full Name</label>
                 <br />
@@ -91,6 +93,8 @@ Notes: ${notes}
                     <option value="Other">Other</option>
                 </select>
                       </div>
+              </div>
+
                       <div className="desc-input">
                         <label>Additional Notes</label>
                         <br />
@@ -99,7 +103,7 @@ Notes: ${notes}
                   onChange={(e) => setNotes(e.target.value)}
                 placeholder="How can we help you today?"></textarea>
                       </div>
-                <button className="send" type="submit">Confirm Appointment Request</button>
+                <button id='btn-form' className="send" type="submit">Confirm Appointment Request</button>
             </form>
             </div>
         </section>

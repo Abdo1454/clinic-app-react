@@ -72,7 +72,7 @@ h2{
     display: none;
 }
 /* الموبايل */
-@media (max-width: 391px) {
+@media (max-width: 480px) {
   .nav-links {
     display: none;
     flex-direction: column;

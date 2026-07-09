@@ -1,155 +1,173 @@
-.location{
+/* ====================================================== 
+   🖥️ الشاشات الكبيرة (Desktop & Tablets) - الـ Default Styles
+====================================================== */
+
+/* --- 🗺️ قسم الموقع والخريطة (Location Section) --- */
+.location {
     margin-left: 100px;
-    margin-top:80px ;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     gap: 60px;
 }
-.map iframe{
+
+.map iframe {
     border-radius: 15px;
     width: 500px;
 }
-.info-address{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+
+.info-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+
 .address-title p {
     color: rgb(114, 119, 119);
     font-size: 20px;
     width: 85%;
 }
-.address-list{
+
+.address-list {
     display: flex;
     gap: 15px;
     align-items: center;
 }
+
 .address-list i {
      color: #006a61;
      font-size: 20px;
 }
-.address-content{
+
+.address-content {
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
     font-family: 'Arial', sans-serif;
 }
-.Equsetion-faq{
-    margin-top:100px ;
+
+/* --- ❓ قسم الأسئلة الشائعة (FAQ Section) --- */
+.Equsetion-faq {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
 }
-.answer-equ{
+
+.answer-equ {
     display: flex;
     flex-direction: column;
     gap: 30px;
     list-style: none;
     font-size: 24px;
-    font-family:'Arial', sans-serif ;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    align-items: center; /* تضمن إن الكروت تيجي في النص */
 }
-.list-equ{
- width: 700px;
-    max-width: 100%;
-     display: flex;
-     flex-direction: column;
-    border:1px solid black ;
-    padding: 25px 10px;
+
+.list-equ {
+    width: 700px;         /* العرض الأصلي على الشاشات الكبيرة */
+    max-width: 90%;       /* حماية أوتوماتيكية للشاشات المتوسطة عشان ميتمددش برة */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 25px 20px;
     border-radius: 15px;
 }
-.question{
-     display: flex;
+
+.question {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-        width: 700px;
-    max-width: 100%;
-    /* height: 60px; */
-    /* justify-content: space-around; */
+    width: 100%;          /* مرن تماماً وبياخد عرض الكارت الأب بالظبط */
 }
-.answer-equ li i{
+
+.answer-equ li i {
     text-align: right;
-     cursor: pointer;
-   
+    cursor: pointer;
 }
-.answer{
+
+.answer {
     font-size: 18px;
     color: #aba8a8;
+    margin-top: 15px;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
+
+
 /* ====================================================== 
-   📱 شاشات الموبايل (أقل من 391px) 
+   📱 شاشات الموبايل (Responsive - أقل من 391px) 
 ====================================================== */
-@media (max-width: 391px) {
+@media (max-width: 480px) {
     
     /* ----------------- 🗺️ قسم الموقع والخريطة ----------------- */
     .location {
-        flex-direction: column;    /* ترتيب عمودي: الخريطة ثم العناوين */
-        margin-left: 0;            /* ❌ إلغاء الهامش الجانبي الكارثي */
-        margin-top: 40px;          /* تقليل المسافة العلوية */
-        gap: 30px;                 /* تقليص الفجوة بين الخريطة والنصوص */
-        padding: 0 15px;           /* مسافة أمان على جوانب الشاشة */
+        flex-direction: column;    /* الخريطة فوق العناوين */
+        margin-left: 0px;          /* تصفير الهامش القاتل */
+        margin-top: 40px;
+        gap: 30px;
+        padding: 0 15px;           /* مسافة أمان على الجوانب */
         align-items: center;
     }
 
     .map {
-        width: 100%;               /* حاوية الخريطة تأخذ كامل العرض المتاح */
+        width: 100%;
         display: flex;
         justify-content: center;
     }
 
     .map iframe {
-        width: 100%;               /* 💡 جعل الخريطة مرنة تماماً وتأخذ عرض الشاشة بأمان */
-        max-width: 340px;          /* حد أقصى مناسب جداً للموبايل */
-        height: 250px;             /* تقليل الارتفاع لتناسب شاشة الموبايل بصرياً */
+        width: 100%;               /* مرن مع عرض الشاشة */
+        max-width: 340px;          
+        height: 250px;             
     }
 
     .info-address {
         width: 100%;
         gap: 20px;
-        text-align: center;        /* توسيط نصوص العنوان للموبايل */
+        text-align: center;        /* نصوص العناوين في المنتصف */
     }
 
     .address-title p {
-        width: 100%;               /* إلغاء الـ 85% لتوزيع مريح */
+        width: 100%;               
         font-size: 18px;
     }
 
     .address-list {
-        flex-direction: column;    /* وضع أيقونة الموقع فوق النص لتوفير المساحة */
+        flex-direction: column;    
         gap: 8px;
     }
 
     /* ----------------- ❓ قسم الأسئلة الشائعة FAQ ----------------- */
     .Equsetion-faq {
-        margin-top: 50px;          /* تقليل المسافة الفاصلة بين الأقسام */
+        margin-top: 50px;
         padding: 0 15px;
         gap: 25px;
     }
 
     .answer-equ {
-        width: 100%;
-        align-items: center;
         gap: 20px;
         padding: 0;
     }
 
     .list-equ {
-        width: 100%;               /* كارت السؤال يأخذ العرض الكامل المتاح */
-        max-width: 340px;          /* حماية الكارت من التمدد الزائد */
-        padding: 20px 15px;        /* ضبط المسافات الداخلية للكارت */
+        width: 100%;               /* الكارت بياخد كامل عرض الحاوية بتاعته (الـ 15px الأمان) */
+        max-width: 340px;          /* العرض المثالي لشاشة الآيفون 12 برو */
+        padding: 20px 15px;        
     }
 
     .question {
-        width: 100%;               /* ❌ إلغاء الـ 700px الثابتة لتصبح مرنة داخل الكارت */
-        font-size: 18px;           /* تصغير حجم خط السؤال ليناسب المساحة الباقية بجانب الأيقونة */
+        width: 100%;               /* بيفضل واخد 100% من الأب ومبيضربش التصميم */
+        font-size: 18px;           /* تصغير الخط لراحة العين */
         gap: 10px;
     }
 
     .answer {
-        font-size: 15px;           /* تصغير خط الإجابة قليلاً لراحة العين في القراءة */
+        font-size: 15px;           
         line-height: 1.5;
         margin-top: 10px;
     }
